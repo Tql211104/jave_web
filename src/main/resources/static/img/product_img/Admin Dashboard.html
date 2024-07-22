@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://localhost:8080/admin/editProduct/5 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Admin Dashboard</title>
+    <link href="./Admin Dashboard_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./Admin Dashboard_files/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="./Admin Dashboard_files/style.css">
+</head>
+<body>
+<!-- Start Navbar  -->
+<nav class="navbar navbar-expand-lg  bg-primary fixed-top navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost:8080/admin/editProduct/5#"><i class="fa-solid fa-cart-shopping"></i> Admin Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost:8080/"><i class="fa-solid fa-house"></i>
+                    Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost:8080/admin/products">Product</a></li>
+
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="http://localhost:8080/admin/editProduct/5#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
+                    <ul class="dropdown-menu">
+                        
+
+                    </ul></li>
+
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="http://localhost:8080/admin/editProduct/5#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fa-solid fa-user"></i> Trần Văn Khải
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="http://localhost:8080/admin/editProduct/5#">Profile</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/admin/">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+
+                        </ul></li>
+
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="http://localhost:8080/logout"><i class="fa-solid fa-right-to-bracket"></i> Logout</a></li>
+                
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<section>
+		<div class="container p-5 mt-3">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<div class="card card-sh">
+						<div class="card-header text-center ">
+							<p class="fs-4">Edit Product</p>
+
+							
+
+							
+
+						</div>
+						<div class="card-body">
+							<form action="http://localhost:8080/admin/updateProduct" method="post" enctype="multipart/form-data">
+								<input type="hidden" name="id" value="5">
+								<div class="mb-3">
+									<label>Enter Title</label> <input type="text" name="title" value="Giày Unisex Converse Chuck Taylor All Star Cruise - Đen" class="form-control">
+								</div>
+
+								<div class="mb-3">
+									<label>Enter Description</label>
+									<textarea rows="8" cols="" class="form-control" name="description" style="height: 284px;">Giày cổ cao với phần trên bằng vải cotton 12oz
+Lưỡi gà bằng vải canvas/da lộn tách rời và lớp phủ da lộn để tăng độ bền và phong cách
+Đệm OrthoLite cho thoải mái cả ngày</textarea>
+								</div>
+								<div class="row">
+									<div class="mb-3 col">
+										<label>Category</label> <select class="form-control" name="category">
+											<option>Giày</option>
+											<option>Áo</option>
+											<option>Giày</option>
+											<option>Quần</option>
+											<option>Balo</option>
+										</select>
+									</div>
+									<div class="mb-3 col">
+										<label>Enter Price</label> <input type="number" name="price" value="1500000.0" class="form-control">
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="mb-3 col">
+										<label>Upload Image</label> <input type="file" name="file" class="form-control">
+									</div>
+
+									<div class="mt-1">
+										<img src="./Admin Dashboard_files/5.jpg" width="100px" height="100px">
+									</div>
+
+								</div>
+								<button class="btn btn-primary">Update</button>
+								<a href="http://localhost:8080/admin/" class="btn btn-link">Cancel</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Start Footer -->
+<div class="container-fluid p-1 bg-primary text-center text-white" style="margin-top: 250px">
+    <p>ecom.com</p>
+</div>
+<!-- End Footer  -->
+<script src="./Admin Dashboard_files/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body></html>
